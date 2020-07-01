@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootswatch Cerulean Template -->
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     <title>Weather App</title>
 </head>
 <body>
@@ -12,16 +13,15 @@
         <div class="row">
             <div class="col-md-6 mx-auto text-center bg-primary mt-5 p-4 rounded">
                 <!-- Location Placeholder -->
-                <hi id="w-location"></hi>
+                <h1 id="w-location" class="text-light" id="city-text"></h1>
+                <hr>
                 <!-- Description Placeholder -->
-                <h3 class="text-dark" id="w-description"></h3>
+                <h3 class="text-dark" id="w-description" id="weather-text"></h3>
                 <!-- Temperature String Placeholder -->
-                <h3 id="w-string"></h3>
-                <!-- Weather Icon Placeholder -->
-                <img id="w-icon">
+                <h3 id="w-string" class="text-dark" id="temperature-text"></h3>
                 <ul id="w-details" class="list-group mt-3">
+                    <li class="list-group-item" id="sun"></li>
                     <li class="list-group-item" id="w-humidity"></li>
-                    <li class="list-group-item" id="w-dewpoint"></li>
                     <li class="list-group-item" id="feels-like"></li>
                     <li class="list-group-item" id="wind"></li>
                 </ul>
@@ -55,8 +55,8 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary" id="w-change-btn">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                         </div>
                     </div>
